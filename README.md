@@ -65,7 +65,7 @@ Next, move to the repository source of the project and compile the application.
 Lastly, you can run Apollo through its binary file.
 
     cd $GOPATH/bin
-    ./apollo
+    ./spazm
 
 At the first launch, `configuration.json` and `database.json` will be created and stored
 in `~/.config/spazm/`.
