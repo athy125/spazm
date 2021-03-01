@@ -6,8 +6,8 @@ import (
 )
 
 // Loop is the main loop of the application. It creates a new goroutine to fetch new events
-// and forwards all of them to Apollo. The screen is redrawn after each event.
-func (a *Apollo) loop() {
+// and forwards all of them to Spazm. The screen is redrawn after each event.
+func (a *spazm) loop() {
 	go func() {
 		for {
 			a.events <- termbox.PollEvent()
@@ -26,7 +26,7 @@ func (a *Apollo) loop() {
 	}
 }
 
-// Main function of the application. Initializes termbox, creates a new Apollo,
+// Main function of the application. Initializes termbox, creates a new Spazm,
 // and calls the main loop.
 func main() {
 	err := termbox.Init()
@@ -37,7 +37,7 @@ func main() {
 
 	termbox.SetInputMode(termbox.InputAlt)
 
-	apollo := newApollo()
-	apollo.draw()
-	apollo.loop()
+	spazm := newSpazm()
+	spazm.draw()
+	spazm.loop()
 }
