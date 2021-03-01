@@ -8,11 +8,11 @@ import (
 )
 
 // Version is the version number of the application.
-const version = "Apollo v1.1.0"
+const version = "Spazm v1.1.0"
 
 // Create a configuration directory for Unis systems.
 func makeUnixConfigDir() {
-	path := os.Getenv("HOME") + "/.config/apollo"
+	path := os.Getenv("HOME") + "/.config/spazm"
 	_, err := os.Stat(path)
 	if err != nil {
 		err = os.Mkdir(path, 0755)
@@ -28,7 +28,7 @@ func databasePath() string {
 		return "database.json"
 	} else {
 		makeUnixConfigDir()
-		return os.Getenv("HOME") + "/.config/apollo/database.json"
+		return os.Getenv("HOME") + "/.config/spazm/database.json"
 	}
 }
 
@@ -38,7 +38,7 @@ func configurationPath() string {
 		return "configuration.json"
 	} else {
 		makeUnixConfigDir()
-		return os.Getenv("HOME") + "/.config/apollo/configuration.json"
+		return os.Getenv("HOME") + "/.config/spazm/configuration.json"
 	}
 }
 
@@ -69,7 +69,7 @@ func (a *Apollo) printHelp() {
 }
 
 // PrintDetailedHelp prints out the detailed help of a function to the logs.
-func (a *Apollo) printDetailedHelp(subject string) {
+func (a *Spazm) printDetailedHelp(subject string) {
 	var s []string
 	switch subject {
 	case "help":
@@ -162,7 +162,7 @@ func (a *Apollo) printDetailedHelp(subject string) {
 }
 
 // PrintWelcome prints out the welcome message to the logs.
-func (a *Apollo) printWelcome() {
+func (a *Spazm) printWelcome() {
 	a.log("{b}*───( " + version + " )───*")
 	a.log("{b}│ {d}This software is licensed under the MIT License.")
 	a.log("{b}│ {d}To get started, use /help.")
@@ -170,7 +170,7 @@ func (a *Apollo) printWelcome() {
 }
 
 // PrintConfig prints out the list of configuration options to the logs.
-func (a *Apollo) printConfig() {
+func (a *Spazm) printConfig() {
 	a.log("{b}*───( Current Configuration )───*")
 	for _, value := range a.c.config() {
 		a.log("{b}│ {d}" + value)
@@ -179,7 +179,7 @@ func (a *Apollo) printConfig() {
 }
 
 // PrintStats prints out relevant statistics about the database.
-func (a *Apollo) printStats() {
+func (a *Spazm) printStats() {
 	totalMovies := 0
 	watchedMovies := 0
 	for i := range a.d.Movies {
