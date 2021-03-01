@@ -9,7 +9,7 @@ import (
 
 // EntriesTab is a tab for displaying entries implementing Tabber.
 type EntriesTab struct {
-	a               *Apollo
+	a               *Spazm
 	entries         *[]Entry
 	slice           []*Entry
 	name            string
