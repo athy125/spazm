@@ -7,7 +7,7 @@ but I have since decided to put it out there on GitHub for all to enjoy.
 Screenshot
 ----------
 
-![ScreenShot](https://user-images.githubusercontent.com/3271352/38456471-61bbee10-3a5b-11e8-8e1c-330a0dafffd5.png)
+![ScreenShot](https://github.com/athy125/spazm/blob/master/38456471-61bbee10-3a5b-11e8-8e1c-330a0dafffd5.png?raw=true)
 
 Features
 --------
