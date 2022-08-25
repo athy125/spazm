@@ -1,8 +1,6 @@
 # Spazm
 
-Spazm is a handy console-based way of organizing all of your media titles and keeping track of 
-what you are currently watching, reading, and playing. It started out as a project for my own usage,
-but I have since decided to put it out there on GitHub for all to enjoy.
+Spazm is a handy console-based media organiser that keeps track of what you're currently viewing, reading, and playing. It began as a project for my own use, but I've now decided to publish it on GitHub for everyone to enjoy.
 
 Screenshot
 ----------
@@ -72,7 +70,4 @@ in `~/.config/spazm/`.
 
 Development State
 -----------------
-
-Spazm is now completely fulfilling my needs. That being said, if someone were to want to 
-contribute to this project, please feel free to either message me for more information or 
-to directly send in a pull request.
+Spazm now perfectly meets my requirements. That being said, if anyone desires to contribute to this project, please feel free to contact me for more information or submit a pull request directly.
